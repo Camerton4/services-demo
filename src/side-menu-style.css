@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: "TTLakes";
+    src: url("fonts/TTLakes-Regular.ttf");
+    font-weight: regular;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "TTLakes";
+    src: url("fonts/TTLakesCondensed-Bold.ttf");
+    font-weight: bold;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: "TTLakes";
+    src: url("fonts/TTLakes-Medium.ttf");
+    font-weight: medium;
+    font-style: normal;
+  }
+  body{
+    margin: 0;
+    margin-right: 100%;
+    padding: 0;
+    font-family: TTLakes;
+    color: black;
+    height: 1024px;
+}
+.mobile_menu {
+    width: 320px;
+    height: 100%;
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02), 16px 0px 52px rgba(14, 24, 80, 0.2);
+
+}
+header {
+    height: 88px;
+    padding: 24px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 16px;
+
+}
+.icon:active{
+    opacity: 0.7;
+}
+.icon-back {
+    background: url(img/burger-close.svg);
+}
+.logo {
+    background: url(img/Logo.svg);
+    width: 97px;
+    height: 51px;
+    margin-right: 40px;
+}
+.search-icon {
+    background: url(img/search.svg);
+}
+.icon-back:active, .icon-back:focus{
+   
+    transform: rotate(90deg);
+    transition-duration: 1.5s;
+}
+.search-icon:hover, .search-icon:focus{
+    transform: rotate(45deg);
+    transition-duration: 1.5s;
+}
+ul {
+    padding: 0;
+    padding-left: 24px;
+    margin-bottom: 200px;
+}
+li {
+    list-style: none;
+    margin-bottom: 32px;
+}
+li > a {
+    text-decoration: none;
+    position: relative;
+    font-size: 16px;
+    font-weight: medium;
+    color: black;
+}
+a:active {
+    color: black;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-tap-highlight-color: transparent;
+}
+
+li > a:hover, li > a:focus {
+opacity: 0.5;
+color: black;
+outline: none;
+transition-duration: 0.5s;
+
+} 
+li > a:hover::before, li > a:focus::before  {
+    content: "";
+    outline: none;
+    opacity: 1;
+    position: relative;
+    left: -24px;
+    border-left: 3px solid #41F6D7;
+}
+.contacts {
+    margin-left: 24px;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    height: 124px;
+    width: 200px;
+}
+.phone {
+    background: url(img/call.svg) no-repeat center;
+}
+.message {
+    background: url(img/chat.svg);
+}
+.profile {
+    background: url(img/profile.svg);
+    margin-bottom: 16px;
+}
+.email {
+    font-size: 16px;
+    text-decoration: none;
+    margin-bottom: 16px;
+    font-weight: medium;
+    color: black;
+}
+.tel {
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: black;
+    font-size: 24px;
+    text-decoration: none;
+}
+.lung > a {
+    margin-right: 8px;
+    text-decoration: none;
+    color: black;
+}
+.lung > a:hover, .lung > a:focus {
+    opacity: 0.5;
+    color: black;
+    outline: none;
+    transition-duration: 0.5s;
+    border: 2px solid gray;
+    } 
